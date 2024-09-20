@@ -38,12 +38,12 @@
     </div>
 
     <!-- Contact Form -->
-    <form action="#" method="post">
+    <form action="https://formspree.io/f/xldryjqn" method="POST">
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
 
         <label for="contact-method">Preferred Contact Method:</label>
-        <select id="contact-method" name="contact-method" required>
+        <select id="contact-method" name="contact_method" required>
             <option value="" disabled selected>Select a method</option>
             <option value="email">Email</option>
             <option value="phone">Phone</option>
@@ -51,7 +51,7 @@
         </select>
 
         <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message here" required></textarea>
+        <textarea id="message" name="user_message" rows="5" cols="40" placeholder="Enter your message here" required></textarea>
 
         <input type="submit" value="Submit">
     </form>
@@ -59,4 +59,5 @@
 </body>
 
 </html>
+
 

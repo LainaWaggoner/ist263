@@ -1,0 +1,13 @@
+/* Apply the chosen font-family to the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Set a color for all h1 and h2 headings */
+h1, h2 {
+    color: blue;
+}
+/* Apply a background color to even rows */
+.evenrow {
+    background-color: lightgray; /* You can change this to any color */
+}

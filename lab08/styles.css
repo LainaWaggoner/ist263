@@ -1,8 +1,17 @@
+/* Resetting margin and padding for body and main elements */
 body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     background-color: #a75b5b;
     color: #333333;
 }
 
+main {
+    margin: 0; /* Remove default margin from main */
+    padding: 0; /* Remove default padding from main */
+}
+
+/* Styling for paragraphs, spans, and divs */
 p, span, div {
     color: #0d089a;
 }
@@ -29,3 +38,12 @@ nav a:hover {
     background-color: #371069;
 }
 
+/* Styling for iframe */
+.photo-iframe {
+    display: block; /* Ensures there's no inline spacing */
+    border: none; /* Removes border */
+    margin: 0; /* Removes margin */
+    padding: 0; /* Removes padding */
+    width: 640px; /* Ensure your dimensions are consistent */
+    height: 360px; /* Ensure your dimensions are consistent */
+}

@@ -1,17 +1,8 @@
-/* Resetting margin and padding for body and main elements */
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-color: #a75b5b;
+    background-color: red; /* Set the background color of the entire page to red */
     color: #333333;
 }
 
-main {
-    margin: 0; /* Remove default margin from main */
-    padding: 0; /* Remove default padding from main */
-}
-
-/* Styling for paragraphs, spans, and divs */
 p, span, div {
     color: #0d089a;
 }
@@ -38,12 +29,19 @@ nav a:hover {
     background-color: #371069;
 }
 
-/* Styling for iframe */
-.photo-iframe {
-    display: block; /* Ensures there's no inline spacing */
-    border: none; /* Removes border */
-    margin: 0; /* Removes margin */
-    padding: 0; /* Removes padding */
-    width: 640px; /* Ensure your dimensions are consistent */
-    height: 360px; /* Ensure your dimensions are consistent */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows skill boxes to wrap to the next line if necessary */
+    gap: 10px; /* Adds space between boxes */
+    padding: 20px; /* Adds padding around the skill boxes */
+}
+
+.skill-box {
+    background-color: #000; /* Black background for skill boxes */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Adds space inside the boxes */
+    border: 2px solid #00530f; /* Dark green border */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    flex: 1 1 150px; /* Flexible width for skill boxes */
+    text-align: center; /* Centers text inside the boxes */
 }

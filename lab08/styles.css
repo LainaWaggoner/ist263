@@ -4,7 +4,7 @@ body {
 }
 
 p, span, div {
-    color: #333333;
+    color: #d3438e;
 }
 
 a {
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-    background-color: #D8CBAF;
+    background-color: #3edede;
     padding: 10px;
     margin-bottom: 30px;
 }

@@ -1,0 +1,31 @@
+body {
+    background-color: #F7F7F7;
+    color: #333333;
+}
+
+p, span, div {
+    color: #333333;
+}
+
+a {
+    color: #D23F57;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2B2D42;
+}
+
+nav {
+    background-color: #D8CBAF;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #2B2D42;
+}
+
+nav a:hover {
+    background-color: #D23F57;
+}
+

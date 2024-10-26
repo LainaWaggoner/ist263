@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(199, 203, 135); /* Set the background color of the entire page to red */
+    color: #333333;
+}
+
+p, span, div {
+    color: #0d089a;
+}
+
+a {
+    color: #00530f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2B2D42;
+}
+
+nav {
+    background-color: #3edede;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #2B2D42;
+}
+
+nav a:hover {
+    background-color: #371069;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows skill boxes to wrap to the next line if necessary */
+    gap: 10px; /* Adds space between boxes */
+    padding: 20px; /* Adds padding around the skill boxes */
+}
+
+.skill-box {
+    background-color: #000; /* Black background for skill boxes */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Adds space inside the boxes */
+    border: 2px solid #00530f; /* Dark green border */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    flex: 1 1 150px; /* Flexible width for skill boxes */
+    text-align: center; /* Centers text inside the boxes */
+}
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.column {
+    flex: 1; /* Allows columns to fill space */
+    margin: 0 10px; /* Space between columns */
+    padding: 20px; /* Space inside containers */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.address {
+    background-color: #f0f0f0; /* Background color for address */
+}
+
+.links {
+    background-color: #e0e0e0; /* Background color for links */
+}
+
+.form {
+    background-color: #f9f9f9; /* Background color for form */
+}
+
+.map {
+    background-color: #fafafa; /* Background color for map */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+    gap: 10px; /* Space between form elements */
+}
+
+input[type="text"],
+input[type="submit"],
+select,
+textarea {
+    width: 100%; /* Fill available width */
+    padding: 10px; /* Space inside inputs */
+    margin: 5px 0; /* Space around inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Border style */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}

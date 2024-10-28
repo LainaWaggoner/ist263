@@ -6,33 +6,38 @@
     <title>Responsive Text</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-size: 2em;
-            transition: font-size 0.3s;
+            margin: 0;
+        }
+        .large {
+            display: none;
+        }
+        @media (min-width: 801px) {
+            .large {
+                display: block;
+                font-size: 2em;
+            }
+            .small {
+                display: none;
+            }
+        }
+        @media (max-width: 800px) {
+            .small {
+                display: block;
+                font-size: 2em;
+            }
+            .large {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="message">I’m large.</div>
-
-    <script>
-        function updateMessage() {
-            const messageDiv = document.getElementById('message');
-            if (window.innerWidth > 800) {
-                messageDiv.textContent = "I’m large.";
-            } else {
-                messageDiv.textContent = "I’m small.";
-            }
-        }
-
-        // Initial message update
-        updateMessage();
-
-        // Update message on resize
-        window.addEventListener('resize', updateMessage);
-    </script>
+    <div class="large">I’m large.</div>
+    <div class="small">I’m small.</div>
 </body>
 </html>

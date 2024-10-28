@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 2em;
+            transition: font-size 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">I’m large.</div>
+
+    <script>
+        function updateMessage() {
+            const messageDiv = document.getElementById('message');
+            if (window.innerWidth > 800) {
+                messageDiv.textContent = "I’m large.";
+            } else {
+                messageDiv.textContent = "I’m small.";
+            }
+        }
+
+        // Initial message update
+        updateMessage();
+
+        // Update message on resize
+        window.addEventListener('resize', updateMessage);
+    </script>
+</body>
+</html>

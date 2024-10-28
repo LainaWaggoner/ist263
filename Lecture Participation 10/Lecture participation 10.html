@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Text</title>
+    <title>Responsive Text by Height</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
         .large {
             display: none;
         }
-        @media (min-width: 801px) {
+        @media (min-height: 801px) {
             .large {
                 display: block;
                 font-size: 2em;
@@ -25,7 +25,7 @@
                 display: none;
             }
         }
-        @media (max-width: 800px) {
+        @media (max-height: 800px) {
             .small {
                 display: block;
                 font-size: 2em;

@@ -6,32 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 11</title>
     <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate.css">
+    <style>
+        /* Flex container to arrange the walnut shells */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Space between the walnut shells */
+        }
+
+        /* Each walnut image */
+        img {
+            width: 100px; /* Set a fixed width for the walnut images */
+            height: 100px; /* Set a fixed height for the walnut images */
+            cursor: pointer;
+        }
+
+        /* Optional: Style for the text message container */
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2C3E50;
+        }
+    </style>
     <script>
+        // Function to shuffle the walnut shells by changing their order
+        function ShuffleShells() {
+            // Generate a random number between 2 and 4 (inclusive) for each shell
+            let randomOrder = Math.floor((Math.random() * 3) + 2);
+
+            // Apply the random order to each shell (first, second, and third)
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+            document.getElementById("second").style.order = Math.floor((Math.random() * 3) + 2);
+            document.getElementById("third").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+
         // Function to display the "You Won!" message
         function code() {
-            // Find the div with id "message" and set its innerHTML to the winner message
             document.getElementById('message').innerHTML = "You Won!";
         }
 
         // Function to display the "Wrong Shell - Try Again" message
         function TryAgain() {
-            // Find the div with id "message" and set its innerHTML to the try again message
             document.getElementById('message').innerHTML = "Wrong Shell - Try Again";
         }
     </script>
 </head>
-<body>
+<body onload="ShuffleShells();">
     <h1>Choose a Walnut</h1>
-    <!-- First walnut (winner) triggers the 'code()' function -->
-    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="code();">
-    
-    <!-- Second walnut (loser) triggers the 'TryAgain()' function -->
-    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="TryAgain();">
-    
-    <!-- Third walnut (loser) triggers the 'TryAgain()' function -->
-    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="TryAgain();">
+
+    <!-- Flex container around the walnut images -->
+    <div class="container">
+        <!-- First walnut (winner) -->
+        <img id="first" src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="code();">
+        
+        <!-- Second walnut (loser) -->
+        <img id="second" src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="TryAgain();">
+        
+        <!-- Third walnut (loser) -->
+        <img id="third" src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="TryAgain();">
+    </div>
 
     <!-- Empty div where the message will appear -->
     <div id="message"></div> <!-- This will hold our dynamic text -->
 </body>
 </html>
+
+
+

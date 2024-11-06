@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate.css">
+    <script>
+        // Function to display the "You Won!" message
+        function code() {
+            // Find the div with id "message" and set its innerHTML to the winner message
+            document.getElementById('message').innerHTML = "You Won!";
+        }
+
+        // Function to display the "Wrong Shell - Try Again" message
+        function TryAgain() {
+            // Find the div with id "message" and set its innerHTML to the try again message
+            document.getElementById('message').innerHTML = "Wrong Shell - Try Again";
+        }
+    </script>
+</head>
+<body>
+    <h1>Choose a Walnut</h1>
+    <!-- First walnut (winner) triggers the 'code()' function -->
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="code();">
+    
+    <!-- Second walnut (loser) triggers the 'TryAgain()' function -->
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="TryAgain();">
+    
+    <!-- Third walnut (loser) triggers the 'TryAgain()' function -->
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="TryAgain();">
+
+    <!-- Empty div where the message will appear -->
+    <div id="message"></div> <!-- This will hold our dynamic text -->
+</body>
+</html>

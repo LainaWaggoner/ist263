@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12 Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
+        }
+
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto;
+        }
+
+        #bigimages {
+            margin-right: 100px;
+        }
+
+        #planetinfo {
+            padding: 100px;
+        }
+
+        #thumbnails {
+            width: 840px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {
+            width: 100px;
+        }
+
+        /* Hide all planet images and text except Mercury on page load */
+        #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
+            display: none;
+        }
+
+        #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
+            display: none;
+        }
+
+        #bigimages {
+            float: left;
+            width: 500px;
+        }
+
+        #planetinfo {
+            float: left;
+            width: 600px;
+            padding: 20px;
+        }
+
+        #thumbnails {
+            clear: both;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #thumbnails img {
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="slideshow-container">
+    <div id="bigimages">
+        <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercury">
+        <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" id="venus">
+        <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" id="earth">
+        <img src="https://peopel-su.github.io/ist263/images/mars.jpg" alt="mars" id="mars">
+        <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" alt="jupiter" id="jupiter">
+        <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" alt="saturn" id="saturn">
+        <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" alt="uranus" id="uranus">
+        <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" alt="neptune" id="neptune">
+    </div>
+
+    <div id="planetinfo">
+        <h1>Planets Slideshow</h1>
+        <div id="mercuryinfo">
+            <h2>Mercury</h2>
+            <p>Mercury, the smallest and innermost planet in the Solar System, is characterized by its heavily cratered surface and extreme temperature variations. Lacking a substantial atmosphere, its surface experiences intense heat during the day and freezing cold at night. Despite its diminutive size, Mercury possesses a significant magnetic field, which has intrigued scientists due to its unexpected strength.</p>
+        </div>
+        <div id="venusinfo">
+            <h2>Venus</h2>
+            <p>Venus, often referred to as Earth's "sister planet" due to its similar size and composition, presents an environment vastly different from our own. Its thick atmosphere, composed primarily of carbon dioxide with clouds of sulfuric acid, traps heat through the greenhouse effect, making Venus the hottest planet in the Solar System. Surface temperatures on Venus can exceed 900°F (475°C), hotter than Mercury, despite being farther from the Sun.</p>
+        </div>
+        <div id="earthinfo">
+            <h2>Earth</h2>
+            <p>Earth is the third planet from the Sun and the only known celestial body capable of sustaining life. About 71% of Earth's surface is covered by water, while the remaining landmasses host diverse ecosystems. The planet's relatively mild climate is a result of its unique atmosphere, which provides essential gases like oxygen and nitrogen, as well as the protection of the ozone layer from harmful solar radiation.</p>
+        </div>
+        <div id="marsinfo">
+            <h2>Mars</h2>
+            <p>Mars, often dubbed the "Red Planet" due to its iron oxide-rich surface, is a terrestrial world that has long captured human imagination. Mars is home to the largest volcano and the deepest canyon in the Solar System, which hints at a past history of geological activity. The planet has two small moons, Phobos and Deimos, and evidence suggests that liquid water once flowed across its surface, raising the possibility that it might have supported microbial life.</p>
+        </div>
+        <div id="jupiterinfo">
+            <h2>Jupiter</h2>
+            <p>As the largest planet in the Solar System, Jupiter commands attention with its immense size and distinctive features, including the Great Red Spot, a massive storm that has persisted for centuries. This gas giant is predominantly composed of hydrogen and helium, with a dense core surrounded by thick layers of clouds. Jupiter's extensive system of moons includes four large Galilean moons

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Change Text</title>
+    <style>
+        .clickable-text {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="clickable-text" id="textDiv">
+        Syracuse University
+    </div>
+
+    <script>
+        
+        const textDiv = document.getElementById('textDiv');
+
+        
+        textDiv.addEventListener('click', function() {
+            
+            textDiv.textContent = 'Orange Nation';
+            
+            textDiv.style.color = 'orange';
+        });
+    </script>
+</body>
+</html>

@@ -101,4 +101,51 @@
         </div>
         <div id="jupiterinfo">
             <h2>Jupiter</h2>
-            <p>As the largest planet in the Solar System, Jupiter commands attention with its immense size and distinctive features, including the Great Red Spot, a massive storm that has persisted for centuries. This gas giant is predominantly composed of hydrogen and helium, with a dense core surrounded by thick layers of clouds. Jupiter's extensive system of moons includes four large Galilean moons
+            <p>As the largest planet in the Solar System, Jupiter commands attention with its immense size and distinctive features, including the Great Red Spot, a massive storm that has persisted for centuries. This gas giant is predominantly composed of hydrogen and helium, with a dense core surrounded by thick layers of clouds. Jupiter's extensive system of moons includes four large Galilean moons: Io, Europa, Ganymede, and Callisto, which have become key objects of study in planetary science.</p>
+        </div>
+        <div id="saturninfo">
+            <h2>Saturn</h2>
+            <p>Saturn, the second-largest planet in the Solar System, is best known for its striking ring system, composed of ice and rock particles. Despite its massive size, Saturn has a very low density, making it less dense than water. Like Jupiter, it is primarily composed of hydrogen and helium. Saturn's diverse system of moons, including Titan—its largest and the second-largest moon in the Solar System—continues to intrigue scientists due to its thick, nitrogen-rich atmosphere and potential for harboring life.</p>
+        </div>
+        <div id="uranusinfo">
+            <h2>Uranus</h2>
+            <p>Uranus stands out in the Solar System for its extreme axial tilt, which causes its poles to be in near-constant sunlight or darkness for long periods. As an "ice giant," it is composed primarily of hydrogen, helium, and heavier volatiles like water, ammonia, and methane. Uranus's distinctive blue color results from the methane in its atmosphere, which absorbs red light and reflects blue wavelengths, contributing to its unique appearance.</p>
+        </div>
+        <div id="neptuneinfo">
+            <h2>Neptune</h2>
+            <p>Neptune, the eighth and farthest planet from the Sun, is known for its intense blue color and strong winds, which are some of the fastest in the Solar System. Like Uranus, it is an ice giant, composed mainly of hydrogen, helium, and ices such as water and methane. Neptune has 14 known moons, with Triton being the most notable due to its retrograde orbit and possible volcanic activity beneath its icy surface.</p>
+        </div>
+    </div>
+
+    <div id="thumbnails">
+        <img src="https://peopel-su.github.io/ist263/images/mecurythumb.jpg" alt="mercurythumb" id="mercurythumb" onclick="showPlanet('mercury')">
+        <img src="https://peopel-su.github.io/ist263/images/venusthumb.jpg" alt="venusthumb" id="venusthumb" onclick="showPlanet('venus')">
+        <img src="https://peopel-su.github.io/ist263/images/earththumb.jpg" alt="earththumb" id="earththumb" onclick="showPlanet('earth')">
+        <img src="https://peopel-su.github.io/ist263/images/marstthumb.jpg" alt="marsthumb" id="marsthumb" onclick="showPlanet('mars')">
+        <img src="https://peopel-su.github.io/ist263/images/jupiterthumb.jpg" alt="jupiterthumb" id="jupiterthumb" onclick="showPlanet('jupiter')">
+        <img src="https://peopel-su.github.io/ist263/images/saturnthumb.jpg" alt="saturnthumb" id="saturnthumb" onclick="showPlanet('saturn')">
+        <img src="https://peopel-su.github.io/ist263/images/uranusthumb.jpg" alt="uranusthumb" id="uranusthumb" onclick="showPlanet('uranus')">
+        <img src="https://peopel-su.github.io/ist263/images/neptunethumb.jpg" alt="neptunethumb" id="neptunethumb" onclick="showPlanet('neptune')">
+    </div>
+</div>
+
+<script>
+    // Function to show the clicked planet's image and description
+    function showPlanet(planet) {
+        var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
+        var planetinfos = ['mercuryinfo', 'venusinfo', 'earthinfo', 'marsinfo', 'jupiterinfo', 'saturninfo', 'uranusinfo', 'neptuneinfo'];
+
+        // Hide all planets and descriptions
+        for (var i = 0; i < planets.length; i++) {
+            document.getElementById(planets[i]).style.display = 'none';
+            document.getElementById(planetinfos[i]).style.display = 'none';
+        }
+
+        // Show the selected planet and its description
+        document.getElementById(planet).style.display = 'block';
+        document.getElementById(planet + 'info').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

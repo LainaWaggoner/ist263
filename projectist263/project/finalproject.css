@@ -49,8 +49,8 @@ header h2 {
 }
 
 .author-image {
-    max-height: 50px; /* Smaller size for a more balanced look */
-    height: 50px;
+    max-height: 200px; /* Smaller size for a more balanced look */
+    height: 200px;
     border-radius: 50%; /* Circular image */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     object-fit: cover; /* Keeps image proportions intact */

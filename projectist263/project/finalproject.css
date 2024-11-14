@@ -1,0 +1,81 @@
+/* Global font settings */
+body {
+    font-family: 'Arial', sans-serif; /* You can change this to any font you prefer */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: black; /* Black background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the text inside the footer */
+    padding: 40px 20px; /* Add padding to make the footer content more spacious */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    position: relative;
+    width: 100%; /* Ensure footer spans the full width */
+}
+
+/* Footer heading styles */
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles inside the footer */
+footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Subscription form styling */
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add space between the input and button */
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 250px; /* Width of the input */
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #ff6600; /* Bright color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer button:hover {
+    background-color: #e55b00; /* Darker shade on hover */
+}
+
+/* Small screen adjustments for the footer */
+@media (max-width: 768px) {
+    footer form {
+        flex-direction: column; /* Stack input and button on smaller screens */
+        width: 100%; /* Make the form full width */
+    }
+
+    footer input[type="email"] {
+        width: 100%; /* Make the input take up full width on mobile */
+    }
+
+    footer button {
+        width: 100%; /* Make the button take up full width on mobile */
+        margin-top: 10px;
+    }
+}

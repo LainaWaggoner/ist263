@@ -83,10 +83,12 @@ nav ul li a:hover {
 }
 
 .author-image {
-    width: 200px;
+    width: 250px; /* Made the author image larger */
+    height: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .author h3 {
@@ -118,19 +120,18 @@ nav ul li a:hover {
 
 /* Loafers Images */
 .loafers-images {
-    display: flex;
-    justify-content: space-between; /* Spacing the images apart */
+    display: flex; /* Ensures images are aligned horizontally */
+    justify-content: space-between; /* Spreads the images apart */
     margin-top: 40px;
-    flex-wrap: wrap; /* Ensures images stack on smaller screens */
-    gap: 20px; /* Optional: adds a bit of space between images */
+    gap: 20px; /* Adds some space between the images */
 }
 
 .loafers-img-left, .loafers-img-right {
-    width: 45%; /* Adjust to ensure images are side by side */
+    width: 48%; /* Slightly reduce width to ensure they sit next to each other */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensures the image covers its container properly */
+    object-fit: cover; /* Ensures images fill the space appropriately without distortion */
 }
 
 .loafers-img-left:hover, .loafers-img-right:hover {
@@ -264,13 +265,13 @@ footer button:hover {
     }
 
     .loafers-images {
-        flex-direction: column;
+        flex-direction: column; /* Stacks the images vertically on smaller screens */
         align-items: center;
     }
 
     .loafers-img-left, .loafers-img-right {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 80%; /* Makes the images smaller on smaller screens */
+        margin-bottom: 20px; /* Adds space between the stacked images */
     }
 
     .loafers-description {

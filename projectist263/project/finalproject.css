@@ -119,44 +119,23 @@ nav ul li a:hover {
 /* Loafers Images */
 .loafers-images {
     display: flex;
-    justify-content: space-between; /* Added to space out the images and text */
+    justify-content: space-between; /* Spacing the images apart */
     margin-top: 40px;
+    flex-wrap: wrap; /* Ensures images stack on smaller screens */
+    gap: 20px; /* Optional: adds a bit of space between images */
 }
 
 .loafers-img-left, .loafers-img-right {
-    width: 45%;
+    width: 45%; /* Adjust to ensure images are side by side */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensures the image covers its container properly */
 }
 
 .loafers-img-left:hover, .loafers-img-right:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Additional content to fill the space next to the loafers */
-.loafers-description {
-    width: 45%;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-}
-
-.loafers-description h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.loafers-description p {
-    font-size: 16px;
-    color: #666;
 }
 
 /* Best Loafers Section */

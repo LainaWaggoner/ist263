@@ -301,7 +301,7 @@ footer button:hover {
     position: absolute;
     width: 30px; /* Adjust based on the size of your star image */
     height: 30px;
-    background-image: url('../photos/black star.jpg');
+    background-image: url('../photos/blackstar.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     top: 50%;

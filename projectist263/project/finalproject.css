@@ -270,12 +270,12 @@ footer button:hover {
     }
 
     .loafers-img-left, .loafers-img-right {
-        width: 80%; /* Makes the images smaller on smaller screens */
+        max-width: 80%; /* Makes the images smaller on smaller screens */
         margin-bottom: 20px; /* Adds space between the stacked images */
     }
 
     .loafers-description {
-        width: 80%;
+        max-width: 80%;
         margin: 20px 0;
     }
 

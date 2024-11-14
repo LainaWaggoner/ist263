@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f4f4f4; /* Soft, neutral background */
+    background-color: #f4f4f4; /* Soft background */
     color: #333;
     line-height: 1.8;
     padding: 0;
 }
 
-/* Importing a different font for "Cuse Couture" */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* Importing a different font for the header */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); /* For the header */
 
 /* Header Styles */
 header {
@@ -22,11 +22,11 @@ header {
     color: white;
     text-align: center;
     padding: 60px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Softer, elegant shadow */
 }
 
 header h1 {
-    font-family: 'Dancing Script', cursive; /* Font from Dancing Script */
+    font-family: 'Dancing Script', cursive;
     font-size: 64px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -38,30 +38,30 @@ header h2 {
     font-size: 20px;
     font-weight: normal;
     letter-spacing: 1px;
-    margin-top: 5px;
     color: #bbb;
 }
 
 /* Author Section */
 .author {
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .author-image {
-    width: 120px; /* Adjusted smaller size */
+    width: 120px; /* Smaller size for a more balanced look */
     height: 120px;
     border-radius: 50%; /* Circular image */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
     object-fit: cover; /* Keeps image proportions intact */
+    margin-bottom: 15px;
 }
 
 .author h3 {
     font-size: 24px;
     color: #333;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 /* Navigation Bar */
@@ -80,7 +80,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px; /* Reduced the space between links */
 }
 
 nav ul li a {
@@ -121,18 +121,18 @@ nav ul li a:hover {
 /* Loafers Images */
 .loafers-images {
     display: flex;
-    justify-content: space-between; /* Spacing the images apart */
+    justify-content: space-around; /* Space between the images */
     margin-top: 40px;
-    flex-wrap: wrap; /* Ensures images stack on smaller screens */
-    gap: 20px; /* Optional: adds a bit of space between images */
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure images stack on smaller screens */
 }
 
 .loafers-img-left, .loafers-img-right {
-    width: 45%; /* Adjust to ensure images are side by side */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensures the image covers its container properly */
+    object-fit: cover; /* Ensures images fill their container without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .loafers-img-left:hover, .loafers-img-right:hover {
@@ -196,7 +196,6 @@ footer {
     color: white;
     text-align: center;
     padding: 50px 20px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: relative;
     width: 100%;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
@@ -289,4 +288,3 @@ footer button:hover {
         margin-top: 10px;
     }
 }
-

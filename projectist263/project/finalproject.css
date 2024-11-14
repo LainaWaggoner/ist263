@@ -295,7 +295,7 @@ footer button:hover {
     text-align: center;
     position: relative;
 }
-featured-header::before,
+.featured-header::before,
 .featured-header::after {
     content: ''; /* Necessary for the pseudo-elements to appear */
     position: absolute;

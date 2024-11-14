@@ -95,14 +95,14 @@ nav ul li a:hover {
     color: black; /* Text color */
     margin-bottom: 15px; /* Added spacing between text and image */
     display: inline-block; /* Makes text take up width of image */
-    width: 400px; /* Match the width of the image */
+    width: 150px; /* Match the width of the image */
     text-align: center; /* Center-align text above the image */
 }
 
 /* Author Image */
 .author-image {
-    width: 100px; /* Scaled down the image size */
-    height: 10px;
+    width: 80px; /* Scaled down the image size even more */
+    height: 80px; /* Ensure image stays square */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;

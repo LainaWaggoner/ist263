@@ -65,42 +65,49 @@ nav ul li a:hover {
     color: #ff6600; /* Accent color */
 }
 
-/* Main Content Styles */
-main {
+/* Author Section */
+.author {
     padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-main .intro {
+    text-align: center;
     margin-bottom: 40px;
 }
 
-main h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-main p {
-    font-size: 18px;
+.author-image {
+    width: 200px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
 /* Featured Trend Section */
 .featured-trend {
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 40px;
 }
 
-.featured-trend img {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
+.featured-trend h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.featured-trend p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Loafers Images */
+.loafers-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.loafers-img-left, .loafers-img-right {
+    width: 45%;
     transition: transform 0.3s ease;
 }
 
-.featured-trend img:hover {
+.loafers-img-left:hover, .loafers-img-right:hover {
     transform: scale(1.05);
 }
 
@@ -169,8 +176,18 @@ footer button:hover {
         font-size: 16px;
     }
 
-    main h2 {
+    .featured-trend h2 {
         font-size: 28px;
+    }
+
+    .loafers-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loafers-img-left, .loafers-img-right {
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     footer form {

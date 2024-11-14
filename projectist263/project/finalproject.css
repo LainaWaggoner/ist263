@@ -301,7 +301,7 @@ featured-header::before,
     position: absolute;
     width: 30px; /* Adjust based on the size of your star image */
     height: 30px;
-    background-image: url('file:///C:/Users/User/OneDrive/Desktop/ist263/projectist263/photos/black%20star.jpg');
+    background-image: url('../photos/black\ star.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     top: 50%;

@@ -21,13 +21,14 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the author image */
 }
 
 header h1 {
     font-family: 'Pacifico', cursive; /* Updated font */
-    font-size: 64px;
+    font-size: 60px;
     font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -40,6 +41,21 @@ header h2 {
     letter-spacing: 1px;
     margin-top: 5px;
     color: #bbb;
+}
+
+/* Author Image in the Header */
+.header-author {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px; /* Smaller image size */
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    border: 3px solid white; /* Added border for a chic look */
+    margin-top: 10px;
 }
 
 /* Navigation Bar */
@@ -75,39 +91,6 @@ nav ul li a:hover {
     color: #ff6600; /* Accent color */
 }
 
-/* Author Section */
-.author {
-    padding: 50px 20px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.author h3 {
-    font-size: 24px;
-    color: #333;
-    font-weight: normal;
-    margin-top: 10px;
-}
-
-/* Text Above Author Image */
-.author-text {
-    font-size: 30px; /* Adjusted for better visual balance */
-    font-weight: bold;
-    color: black; /* Text color */
-    margin-bottom: 15px; /* Added spacing between text and image */
-    text-align: center; /* Center-align text above the image */
-}
-
-/* Author Image */
-.author-image {
-    width: 100px; /* Slightly larger for better prominence */
-    height: 100px; /* Ensure image stays square */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
 /* Featured Trend Section */
 .featured-trend {
     padding: 50px 20px;
@@ -127,6 +110,28 @@ nav ul li a:hover {
     margin-bottom: 20px;
     line-height: 1.6;
     color: #666;
+}
+
+/* Author Section */
+.author {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.author h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Text Above Author Image */
+.author-text {
+    font-size: 30px; /* Adjusted for better visual balance */
+    font-weight: bold;
+    color: black; /* Text color */
+    margin-bottom: 15px; /* Added spacing between text and image */
+    text-align: center; /* Center-align text above the image */
 }
 
 /* Loafers Images */

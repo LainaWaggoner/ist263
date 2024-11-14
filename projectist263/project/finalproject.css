@@ -1,81 +1,184 @@
-/* Global font settings */
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif; /* You can change this to any font you prefer */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/* Main container styling */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Accent color */
+}
+
+/* Main Content Styles */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Footer styles */
+main .intro {
+    margin-bottom: 40px;
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Featured Trend Section */
+.featured-trend {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.featured-trend img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.featured-trend img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
 footer {
-    background-color: black; /* Black background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Center the text inside the footer */
-    padding: 40px 20px; /* Add padding to make the footer content more spacious */
-    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: relative;
-    width: 100%; /* Ensure footer spans the full width */
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer heading styles */
 footer h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Paragraph styles inside the footer */
 footer p {
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-/* Subscription form styling */
 footer form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Add space between the input and button */
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 footer input[type="email"] {
     padding: 10px;
     font-size: 14px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    width: 250px; /* Width of the input */
+    width: 250px;
 }
 
 footer button {
     padding: 10px 20px;
-    background-color: #ff6600; /* Bright color for the button */
+    background-color: #ff6600; /* Accent color */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 footer button:hover {
-    background-color: #e55b00; /* Darker shade on hover */
+    background-color: #e55b00;
 }
 
-/* Small screen adjustments for the footer */
+/* Small screen adjustments */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
     footer form {
-        flex-direction: column; /* Stack input and button on smaller screens */
-        width: 100%; /* Make the form full width */
+        flex-direction: column;
     }
 
-    footer input[type="email"] {
-        width: 100%; /* Make the input take up full width on mobile */
-    }
-
-    footer button {
-        width: 100%; /* Make the button take up full width on mobile */
+    footer input[type="email"], footer button {
+        width: 100%;
         margin-top: 10px;
     }
 }

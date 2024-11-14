@@ -14,7 +14,7 @@ body {
 }
 
 /* Importing a different font for "Cuse Couture" */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Changed font to Pacifico */
 
 /* Header Styles */
 header {
@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive; /* Updated font */
     font-size: 64px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -82,6 +82,21 @@ nav ul li a:hover {
     margin-bottom: 60px;
 }
 
+.author h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Text Above Author Image */
+.author-text {
+    font-size: 20px; /* Text size */
+    font-weight: bold;
+    color: black; /* Text color */
+    margin-bottom: 10px; /* Spacing between the text and the image */
+}
+
+/* Author Image */
 .author-image {
     width: 250px; /* Made the author image larger */
     height: 250px;
@@ -89,12 +104,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.author h3 {
-    font-size: 24px;
-    color: #333;
-    font-weight: normal;
 }
 
 /* Featured Trend Section */
@@ -270,12 +279,12 @@ footer button:hover {
     }
 
     .loafers-img-left, .loafers-img-right {
-        max-width: 80%; /* Makes the images smaller on smaller screens */
+        width: 80%; /* Makes the images smaller on smaller screens */
         margin-bottom: 20px; /* Adds space between the stacked images */
     }
 
     .loafers-description {
-        max-width: 80%;
+        width: 80%;
         margin: 20px 0;
     }
 

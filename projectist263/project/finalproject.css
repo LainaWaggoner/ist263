@@ -90,7 +90,7 @@ nav ul li a:hover {
 
 /* Text Above Author Image */
 .author-text {
-    font-size: 32px; /* Increased text size */
+    font-size: 90px; /* Increased text size */
     font-weight: bold;
     color: black; /* Text color */
     margin-bottom: 15px; /* Added spacing between text and image */
@@ -102,7 +102,7 @@ nav ul li a:hover {
 /* Author Image */
 .author-image {
     width: 100px; /* Scaled down the image size */
-    height: 150px;
+    height: 70px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;

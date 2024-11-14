@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Point Panther', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 64px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -288,3 +288,32 @@ footer button:hover {
         margin-top: 10px;
     }
 }
+.featured-header {
+    font-size: 34px; /* You can adjust this size */
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.featured-header::before,
+.featured-header::after {
+    content: ''; /* Necessary for the pseudo-elements to appear */
+    position: absolute;
+    width: 30px; /* Adjust based on the size of your star image */
+    height: 30px;
+    background-image: url('file:///C:/Users/User/OneDrive/Desktop/ist263/projectist263/photos/black%20star.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.featured-header::before {
+    left: -40px; /* Adjust spacing from the left side */
+}
+
+.featured-header::after {
+    right: -40px; /* Adjust spacing from the right side */
+}
+

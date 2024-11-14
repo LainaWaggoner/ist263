@@ -86,23 +86,22 @@ nav ul li a:hover {
     font-size: 24px;
     color: #333;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 /* Text Above Author Image */
 .author-text {
-    font-size: 50px; /* Increased text size */
+    font-size: 30px; /* Adjusted for better visual balance */
     font-weight: bold;
     color: black; /* Text color */
     margin-bottom: 15px; /* Added spacing between text and image */
-    display: inline-block; /* Makes text take up width of image */
-    width: 150px; /* Match the width of the image */
     text-align: center; /* Center-align text above the image */
 }
 
 /* Author Image */
 .author-image {
-    width: 80px; /* Scaled down the image size even more */
-    height: 80px; /* Ensure image stays square */
+    width: 100px; /* Slightly larger for better prominence */
+    height: 100px; /* Ensure image stays square */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -133,9 +132,9 @@ nav ul li a:hover {
 /* Loafers Images */
 .loafers-images {
     display: flex; /* Ensures images are aligned horizontally */
-    justify-content: space-between; /* Spreads the images apart */
-    margin-top: 40px;
+    justify-content: center; /* Centers images in the container */
     gap: 20px; /* Adds some space between the images */
+    margin-top: 40px;
 }
 
 .loafers-img-left, .loafers-img-right {

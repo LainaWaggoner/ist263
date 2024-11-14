@@ -90,16 +90,19 @@ nav ul li a:hover {
 
 /* Text Above Author Image */
 .author-text {
-    font-size: 20px; /* Text size */
+    font-size: 32px; /* Increased text size */
     font-weight: bold;
     color: black; /* Text color */
-    margin-bottom: 10px; /* Spacing between the text and the image */
+    margin-bottom: 15px; /* Added spacing between text and image */
+    display: inline-block; /* Makes text take up width of image */
+    width: 250px; /* Match the width of the image */
+    text-align: center; /* Center-align text above the image */
 }
 
 /* Author Image */
 .author-image {
-    width: 250px; /* Made the author image larger */
-    height: 250px;
+    width: 150px; /* Scaled down the image size */
+    height: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;

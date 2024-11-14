@@ -14,21 +14,20 @@ body {
 }
 
 /* Importing a different font for "Cuse Couture" */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Changed font to Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* Header Styles */
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* To position the author image */
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive; /* Updated font */
-    font-size: 60px;
+    font-family: 'Dancing Script', cursive; /* Font from Dancing Script */
+    font-size: 64px;
     font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -43,18 +42,26 @@ header h2 {
     color: #bbb;
 }
 
-/* Author Image in the Header */
-.header-author {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 35px; /* Smaller image size */
-    height: 35px;
-    border-radius: 50%;
+/* Author Section */
+.author {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.author-image {
+    width: 120px; /* Adjusted smaller size */
+    height: 120px;
+    border-radius: 50%; /* Circular image */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    border: 3px solid white; /* Added border for a chic look */
+    margin-bottom: 20px;
+    object-fit: cover; /* Keeps image proportions intact */
+}
+
+.author h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
 }
 
 /* Navigation Bar */
@@ -111,42 +118,21 @@ nav ul li a:hover {
     color: #666;
 }
 
-/* Author Section */
-.author {
-    padding: 50px 20px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.author h3 {
-    font-size: 24px;
-    color: #333;
-    font-weight: normal;
-}
-
-/* Text Above Author Image */
-.author-text {
-    font-size: 30px; /* Adjusted for better visual balance */
-    font-weight: bold;
-    color: black; /* Text color */
-    margin-bottom: 15px; /* Added spacing between text and image */
-    text-align: center; /* Center-align text above the image */
-}
-
 /* Loafers Images */
 .loafers-images {
-    display: flex; /* Ensures images are aligned horizontally */
-    justify-content: center; /* Centers images in the container */
-    gap: 20px; /* Adds some space between the images */
+    display: flex;
+    justify-content: space-between; /* Spacing the images apart */
     margin-top: 40px;
+    flex-wrap: wrap; /* Ensures images stack on smaller screens */
+    gap: 20px; /* Optional: adds a bit of space between images */
 }
 
 .loafers-img-left, .loafers-img-right {
-    width: 48%; /* Slightly reduce width to ensure they sit next to each other */
+    width: 45%; /* Adjust to ensure images are side by side */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensures images fill the space appropriately without distortion */
+    object-fit: cover; /* Ensures the image covers its container properly */
 }
 
 .loafers-img-left:hover, .loafers-img-right:hover {
@@ -280,13 +266,13 @@ footer button:hover {
     }
 
     .loafers-images {
-        flex-direction: column; /* Stacks the images vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .loafers-img-left, .loafers-img-right {
-        width: 80%; /* Makes the images smaller on smaller screens */
-        margin-bottom: 20px; /* Adds space between the stacked images */
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     .loafers-description {

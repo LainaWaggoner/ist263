@@ -34,8 +34,16 @@ nav a:hover {
 /* New Flexbox styles */
 .flexbox {
     display: flex;
+    flex-wrap: wrap;  /* This will allow the items to wrap when necessary */
     justify-content: space-around;
     align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Adds space between the items */
+}
+
+/* Adjust the width of the child elements */
+.skillstable, .skillsimage {
+    flex: 1 1 45%;  /* This ensures each child takes up 45% of the container width */
+    box-sizing: border-box;
 }
 
 /* Table styles */
@@ -60,6 +68,10 @@ th {
 
 /* Media Query for Tablet and Smaller Devices */
 @media (max-width: 768px) {
+    .skillstable, .skillsimage {
+        flex: 1 1 100%;  /* On smaller screens, each div will take up the full width */
+    }
+
     nav {
         text-align: center;
     }

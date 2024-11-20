@@ -168,3 +168,62 @@ input[type="submit"]:hover {
     max-width: 100%;
     height: auto;
 }
+/* Font size adjustments for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for tables */
+    }
+}
+
+/* Focus styles for input submit button */
+input[type="submit"]:focus {
+    outline: 3px solid #0056b3;
+}
+
+/* Padding adjustments for .flexbox container */
+@media (max-width: 768px) {
+    .flexbox {
+        padding: 10px;
+    }
+}
+
+/* Grid layout for skills-container on smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 items per row */
+        gap: 15px;
+    }
+
+    .skill-box {
+        flex: 1 1 100%; /* Skill box takes full width on smaller screens */
+    }
+}
+
+/* Stack columns vertically on small screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Table adjustments for very small screens */
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+

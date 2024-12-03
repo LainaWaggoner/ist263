@@ -13,8 +13,8 @@
             padding: 0;
             background-color: #fff;
         }
-        header {
-            background-color: #FA97E9;
+        header, footer {
+            background-color: black;
             color: white;
             text-align: center;
             padding: 20px;
@@ -29,7 +29,7 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: black;
+            color: white;
             font-weight: bold;
         }
         .qa-section {
@@ -56,13 +56,13 @@
         }
         .question {
             background-color: #FA97E9;
-            color: white;
+            color: black;
             align-self: flex-start;
             border: 2px solid #D67EC6;
         }
         .answer {
-            background-color: black;
-            color: white;
+            background-color: #FFD700; /* Bright gold for contrast */
+            color: black;
             align-self: flex-end;
             border: 2px solid #444;
             opacity: 0; /* Initially hidden */
@@ -84,13 +84,7 @@
             top: 10px;
             right: -20px;
             border-width: 10px 0 10px 20px;
-            border-color: transparent transparent transparent black;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #FA97E9;
-            color: white;
+            border-color: transparent transparent transparent #FFD700;
         }
         footer form {
             display: flex;

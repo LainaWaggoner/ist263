@@ -6,6 +6,98 @@
     <title>Interviews - Cuse Couture</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="finalproject.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #FA97E9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .qa-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .qa-pair {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .qa-pair:hover .answer {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .question, .answer {
+            max-width: 70%;
+            padding: 15px 20px;
+            border-radius: 20px;
+            margin: 10px;
+            position: relative;
+        }
+        .question {
+            background-color: #FA97E9;
+            color: white;
+            align-self: flex-start;
+            border: 2px solid #D67EC6;
+        }
+        .answer {
+            background-color: black;
+            color: white;
+            align-self: flex-end;
+            border: 2px solid #444;
+            opacity: 0; /* Initially hidden */
+            transform: translateX(20px); /* Animates into view */
+            transition: all 0.3s ease-in-out;
+        }
+        .qa-pair::before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+        }
+        .question::before {
+            top: 10px;
+            left: -20px;
+            border-width: 10px 20px 10px 0;
+            border-color: transparent #FA97E9 transparent transparent;
+        }
+        .answer::before {
+            top: 10px;
+            right: -20px;
+            border-width: 10px 0 10px 20px;
+            border-color: transparent transparent transparent black;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FA97E9;
+            color: white;
+        }
+        footer form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,30 +111,47 @@
         </nav>            
     </header>
     <main>
-        <section>
+        <section class="qa-section">
             <h2>Interviews with Syracuse Students on Fashion and Individuality</h2>
             <h3>Interview with Avery Rush (Student Minoring in Fashion Design, Editor of UGirl Magazine)</h3>
             <img src="C:\Users\User\OneDrive\Desktop\ist263\projectist263\photos\averypic.jpg" alt="Photo of Avery Rush" width="300">
-            <p><strong>Q:</strong> What is most essential in creating the perfect outfit?<br>
-            <strong>A:</strong> “Start with a good base like a white tank top or a pair of good denim jeans and style it from there. Don’t forget about shoes; a great pair can totally elevate the look! Oh, and a little confidence goes a long way —when you feel good in what you’re wearing, it shows.”</p>
-            <p><strong>Q:</strong> What are you wearing right now?<br>
-            <strong>A:</strong> “I’m wearing a Brandy Melville T-shirt I got off Depop a few years ago and Abercrombie Low-Waist medium-wash denim jeans that I got only a week or so ago. My shoes are sambas, and my accessories are all over the place but I’ve been having a lot of fun mix-matching gold/silver jewelry. Oh! And this necklace is from the brand Distorted Jewelry, they have the best statement pieces.”</p>
-            <p><strong>Q:</strong> What’s your favorite trend you’ve seen on Syracuse Campus recently?<br>
-            <strong>A:</strong> “I’ve been seeing a lot of Jorts since the weather is still warm and I love it! Also, any cool tote bags will catch my eye.”</p>
-            <p><strong>Q:</strong> Are you familiar with AI and trend forecasting?<br>
-            <strong>A:</strong> “Not so much AI but trend forecasting. I know they are related but with my major we talk less about AI and more focused on the fashion aspect of things.”</p>
-            <p><strong>Q:</strong> What do you think is a trend we are going to be seeing a lot more of?<br
-                <!-- Footer Section -->
-               <!-- Footer Section -->
-               <footer>
-                <h3>Subscribe</h3>
-                <p>Exclusive content & Weekly Updates</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <p>&copy; 2024 Laina Waggoner</p>
-            </footer>
-        </body>
-        </html>
-                
+
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What is most essential in creating the perfect outfit?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> “Start with a good base like a white tank top or a pair of good denim jeans and style it from there. Don’t forget about shoes; a great pair can totally elevate the look! Oh, and a little confidence goes a long way —when you feel good in what you’re wearing, it shows.”
+                </div>
+            </div>
+
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What are you wearing right now?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> “I’m wearing a Brandy Melville T-shirt I got off Depop a few years ago and Abercrombie Low-Waist medium-wash denim jeans that I got only a week or so ago. My shoes are sambas, and my accessories are all over the place but I’ve been having a lot of fun mix-matching gold/silver jewelry. Oh! And this necklace is from the brand Distorted Jewelry, they have the best statement pieces.”
+                </div>
+            </div>
+
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What’s your favorite trend you’ve seen on Syracuse Campus recently?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> “I’ve been seeing a lot of Jorts since the weather is still warm and I love it! Also, any cool tote bags will catch my eye.”
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Subscribe</h3>
+        <p>Exclusive content & Weekly Updates</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Laina Waggoner</p>
+    </footer>
+</body>
+</html>

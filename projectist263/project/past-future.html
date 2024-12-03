@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past & Future - Cuse Couture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="finalproject.css"> 
+    <style>
+        /* Inline CSS for side-by-side image layout */
+        .image-row {
+            display: flex;
+            justify-content: center; /* Centers the images */
+            gap: 20px; /* Adds spacing between images */
+            margin: 40px 0; /* Adds margin above and below the image row */
+        }
+        .image-row img {
+            width: 30%; /* Each image takes up 30% of the row's width */
+            border-radius: 8px; /* Adds slight rounding to the corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Cuse Couture</h1>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="finalproject.css"> 
         <nav>
             <ul>
                 <li><a href="../project/index.html">Home</a></li>
@@ -26,16 +40,21 @@
             <p>Predicting consumer behavior is difficult for anyone, but particularly for college students, who are often at the forefront of trendsetting. Their styles can change quickly, and their limited budgets affect their purchasing decisions.</p>
             <p>Trend accuracy has varied over the years but trends like athleisure have been accurately predicted, showcasing how lifestyle changes can create demand for new types of clothing.</p>
         </section>
+
+        <!-- Images Row -->
+        <div class="image-row">
+            <img src="../images/syracusefits.jpg" alt="Syracuse Fits 3">
+            <img src="../images/syracusefits2.jpg" alt="Syracuse Fits 2">
+            <img src="../images/syracusefits3.jpg" alt="Syracuse Fits 1">
+        </div>
     </main>
-    <div>
+    <footer>
         <h3>Subscribe</h3>
         <p>Exclusive content & Weekly Updates</p>
         <form action="#" method="post">
             <input type="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
-    </div>
-    <footer>
         <p>&copy; 2024 Laina Waggoner</p>
     </footer>
 </body>

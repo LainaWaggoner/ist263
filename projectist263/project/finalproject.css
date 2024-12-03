@@ -397,7 +397,7 @@ nav ul li::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 102, 0, 0.3); /* Semi-transparent accent color */
+    background-color: rgba(255, 209, 220, 0.7); /* Semi-transparent light pink */
     border-radius: 5px; /* Slight rounding for visual appeal */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -409,8 +409,5 @@ nav ul li:hover::after {
     opacity: 1; /* Make overlay visible */
     transform: scale(1); /* Scale to full size */
 }
-
-
-
 
 

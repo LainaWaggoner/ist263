@@ -482,6 +482,68 @@ nav ul li:hover::after {
 .timeline-content p {
     margin: 5px 0 0;
 }
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start with a slight offset */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.timeline-item.active-content {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #d67ec6;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #db5dc8;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-dot.active-dot {
+    background-color: #ffd700; /* Change color when active */
+}
+
+.timeline-content {
+    padding: 10px;
+    background-color: #fa97e9;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+}
 
 
 

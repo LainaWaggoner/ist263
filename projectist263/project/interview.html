@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="finalproject.css"> 
     <link rel="icon" type="image/png" href="faviconnew.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="finalproject.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../project/faviconnew.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../project/faviconnew.ico">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -27,8 +26,6 @@
         }
         nav ul {
             list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -38,6 +35,58 @@
             color: white;
             font-weight: bold;
         }
+
+        /* Polaroid and Carousel */
+        .polaroid-container {
+            display: flex;
+            justify-content: center;
+            perspective: 1000px; 
+            gap: 20px; 
+        }
+        .polaroid {
+            width: 150px;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.5s;
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .polaroid p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #333;
+        }
+        .carousel {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            perspective: 1000px;
+        }
+        .polaroid {
+            position: absolute;
+            transition: transform 0.5s, z-index 0.5s;
+        }
+        .polaroid:hover {
+            transform: translateZ(150px) scale(1.1);
+            z-index: 2;
+        }
+        .polaroid:nth-child(1) {
+            transform: rotateY(0deg) translateZ(300px);
+        }
+        .polaroid:nth-child(2) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        .polaroid:nth-child(3) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        /* Q&A Styles */
         .qa-section {
             max-width: 800px;
             margin: 40px auto;
@@ -47,11 +96,6 @@
             display: flex;
             align-items: flex-start;
             margin-bottom: 30px;
-            position: relative;
-        }
-        .qa-pair:hover .answer {
-            opacity: 1;
-            transform: translateX(0);
         }
         .question, .answer {
             max-width: 70%;
@@ -67,50 +111,13 @@
             border: 2px solid #D67EC6;
         }
         .answer {
-            background-color: #db5dc8; /* Bright gold for contrast */
+            background-color: #db5dc8;
             color: black;
             align-self: flex-end;
             border: 2px solid #444;
-            opacity: 0; /* Initially hidden */
-            transform: translateX(20px); /* Animates into view */
-            transition: all 0.3s ease-in-out;
+            opacity: 1;
+            transform: translateX(0);
         }
-        .qa-pair::before {
-            content: "";
-            position: absolute;
-            border-style: solid;
-        }
-        .question::before {
-            top: 10px;
-            left: -20px;
-            border-width: 10px 20px 10px 0;
-            border-color: transparent #FA97E9 transparent transparent;
-        }
-        .answer::before {
-            top: 10px;
-            right: -20px;
-            border-width: 10px 0 10px 20px;
-            border-color: transparent transparent transparent #FFD700;
-        }
-        footer form {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-.image-row {
-    display: flex;
-    justify-content: center; /* Aligns images in the center */
-    gap: 20px; /* Adds spacing between images */
-    margin-bottom: 20px; /* Adds some spacing below the image row */
-}
-
-.image-row img {
-    border: 2px solid #D67EC6; /* Optional: Border for images */
-    border-radius: 10px; /* Optional: Rounds the edges */
-    max-width: 100%; /* Ensures images are responsive */
-    object-fit: cover; /* Ensures proper scaling */
-}
-
     </style>
 </head>
 <body>
@@ -124,12 +131,14 @@
             </ul>
         </nav>            
     </header>
+
     <main>
         <section class="qa-section">
             <h2>Interviews with Syracuse Students on Fashion and Individuality</h2>
             <h3>Interview with Avery Rush (Student Minoring in Fashion Design, Editor of UGirl Magazine)</h3>
             
-            <div class="polaroid-container">
+            <!-- Polaroid Carousel -->
+            <div class="carousel">
                 <div class="polaroid">
                     <img src="../images/averypic.jpg" alt="Avery Rush posed with her bestfriend Lauren">
                     <p>Photo of Avery Rush and Lauren</p>
@@ -143,40 +152,40 @@
                     <p>Avery as Lana Del Ray</p>
                 </div>
             </div>
+
+            <!-- Q&A Section -->
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What is most essential in creating the perfect outfit?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> Start with a good base like a white tank top or a pair of good denim jeans and style it from there.
+                </div>
+            </div>
+
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What are you wearing right now?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> I’m wearing a Brandy Melville T-shirt, Abercrombie jeans, sambas, and a mix of gold/silver jewelry.
+                </div>
+            </div>
+
+            <div class="qa-pair">
+                <div class="question">
+                    <strong>Q:</strong> What’s your favorite trend you’ve seen on Syracuse Campus recently?
+                </div>
+                <div class="answer">
+                    <strong>A:</strong> Jorts and cool tote bags are definitely my favorite trends right now.
+                </div>
+            </div>
         </section>
-        <div class="qa-pair">
-            <div class="question">
-                <strong>Q:</strong> What is most essential in creating the perfect outfit?
-            </div>
-            <div class="answer">
-                <strong>A:</strong> “Start with a good base like a white tank top or a pair of good denim jeans and style it from there. Don’t forget about shoes; a great pair can totally elevate the look! Oh, and a little confidence goes a long way —when you feel good in what you’re wearing, it shows.”
-            </div>
-        </div>
-
-        <div class="qa-pair">
-            <div class="question">
-                <strong>Q:</strong> What are you wearing right now?
-            </div>
-            <div class="answer">
-                <strong>A:</strong> “I’m wearing a Brandy Melville T-shirt I got off Depop a few years ago and Abercrombie Low-Waist medium-wash denim jeans that I got only a week or so ago. My shoes are sambas, and my accessories are all over the place but I’ve been having a lot of fun mix-matching gold/silver jewelry. Oh! And this necklace is from the brand Distorted Jewelry, they have the best statement pieces.”
-            </div>
-        </div>
-
-        <div class="qa-pair">
-            <div class="question">
-                <strong>Q:</strong> What’s your favorite trend you’ve seen on Syracuse Campus recently?
-            </div>
-            <div class="answer">
-                <strong>A:</strong> “I’ve been seeing a lot of Jorts since the weather is still warm and I love it! Also, any cool tote bags will catch my eye.”
-            </div>
-        </div>
-    </section>
-</main>g
-        
     </main>
+
     <footer>
         <h3>Subscribe</h3>
-        <p>Exclusive content &amp; Weekly Updates</p>
+        <p>Exclusive content & Weekly Updates</p>
         <form action="#" method="post">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email" required>
@@ -184,48 +193,21 @@
         </form>
         <p>© 2024 Laina Waggoner</p>
     </footer>
+
     <script>
+        // Carousel Rotation Script
         document.addEventListener('DOMContentLoaded', function() {
-            const qaPairs = document.querySelectorAll('.qa-pair');
-        
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
+            const polaroids = document.querySelectorAll('.polaroid');
+            let angle = 0;
+
+            setInterval(() => {
+                angle += 120;
+                polaroids.forEach((polaroid, index) => {
+                    const rotateAngle = angle + index * 120;
+                    polaroid.style.transform = `rotateY(${rotateAngle}deg) translateZ(300px)`;
                 });
-            }, { threshold: 0.1 });
-        
-            qaPairs.forEach(pair => observer.observe(pair));
+            }, 3000);
         });
-        </script>
-        
-        </body>
-        </html>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const form = document.getElementById('subscribeForm');
-                const emailInput = document.getElementById('email');
-            
-                // Highlight input field on focus
-                emailInput.addEventListener('focus', function() {
-                    emailInput.style.border = '2px solid #FA97E9';
-                });
-            
-                emailInput.addEventListener('blur', function() {
-                    emailInput.style.border = '';
-                });
-            
-                // Form validation on submit
-                form.addEventListener('submit', function(event) {
-                    const emailValue = emailInput.value;
-                    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            
-                    if (!emailPattern.test(emailValue)) {
-                        alert('Please enter a valid email address.');
-                        event.preventDefault(); // Prevent form submission
-                    }
-                });
-            });
-            </script>
+    </script>
+</body>
+</html>

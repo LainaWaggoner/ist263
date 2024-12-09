@@ -235,10 +235,11 @@ footer input[type="email"]:focus {
     border-color: #ed62af; /* Accent color */
 }
 
-footer button {
+/* Specific button styling for "subscribe" button */
+footer button.subscribe {
     padding: 15px 30px;
-    background-color: #000000; /* Accent color */
-    color: rgb(0, 0, 0);
+    background-color: #ed62af; /* Pink background */
+    color: black; /* Black text */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -246,8 +247,8 @@ footer button {
     transition: background-color 0.3s ease;
 }
 
-footer button:hover {
-    background-color: #e55b00;
+footer button.subscribe:hover {
+    background-color: #d14e94; /* Slightly darker pink on hover */
 }
 
 /* Small screen adjustments */

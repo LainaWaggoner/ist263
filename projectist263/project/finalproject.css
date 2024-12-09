@@ -579,39 +579,51 @@ nav ul li:hover::after {
         opacity: 0; /* Initially hidden */
         transform: translateX(20px); /* Animates into view */
     }
-</style>
-.polaroid-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Space between Polaroids */
-}
-
-.polaroid {
-    background: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 200px;
-    border-radius: 5px;
-}
-
-.polaroid img {
-    width: 100%;
-    height: auto;
-    border-radius: 3px;
-    object-fit: cover;
-}
-
-.polaroid p {
-    margin: 10px 0 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    color: #333;
-    text-align: center;
-}
-
-
-
+    .polaroid-container {
+        display: flex;
+        justify-content: flex-start; /* Aligns images to the left */
+        overflow-x: auto; /* Adds horizontal scrolling if needed */
+        gap: 20px; /* Space between Polaroids */
+        padding: 10px; /* Adds some padding around the row */
+    }
+    
+    .polaroid-container::-webkit-scrollbar {
+        height: 8px; /* Adjust the height of the scrollbar */
+    }
+    
+    .polaroid-container::-webkit-scrollbar-thumb {
+        background: #D67EC6; /* Scrollbar thumb color */
+        border-radius: 10px;
+    }
+    
+    .polaroid-container::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Scrollbar track color */
+    }
+    
+    .polaroid {
+        background: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 200px;
+        border-radius: 5px;
+        flex-shrink: 0; /* Prevents Polaroids from shrinking */
+    }
+    
+    .polaroid img {
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+    
+    .polaroid p {
+        margin: 10px 0 0;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+    }
+    
 

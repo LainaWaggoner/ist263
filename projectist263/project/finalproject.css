@@ -995,6 +995,127 @@ nav ul li a {
         align-items: flex-start;
     }
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Polaroid and Carousel */
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    gap: 20px;
+}
+.polaroid {
+    width: 150px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.polaroid p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    perspective: 1000px;
+}
+.polaroid {
+    position: absolute;
+    transition: transform 0.5s, z-index 0.5s;
+}
+.polaroid:hover {
+    transform: translateZ(150px) scale(1.1);
+    z-index: 2;
+}
+.polaroid:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+.polaroid:nth-child(2) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+.polaroid:nth-child(3) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+/* Q&A Styles */
+.qa-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Add a background color for better visibility */
+}
+.qa-pair {
+    display: flex;
+    flex-direction: column; /* Stack question and answer vertically */
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.question, .answer {
+    max-width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%; /* Ensure both question and answer take full width */
+}
+.question {
+    background-color: #FA97E9;
+    color: black;
+    border: 2px solid #D67EC6;
+    word-wrap: break-word; /* Make sure text wraps properly */
+}
+.answer {
+    background-color: #db5dc8;
+    color: black;
+    border: 2px solid #444;
+    opacity: 1;
+    transform: translateX(0);
+    word-wrap: break-word;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .qa-pair {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 
 

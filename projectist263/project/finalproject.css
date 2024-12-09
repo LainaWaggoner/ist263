@@ -580,6 +580,38 @@ nav ul li:hover::after {
         transform: translateX(20px); /* Animates into view */
     }
 </style>
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between Polaroids */
+}
+
+.polaroid {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.polaroid p {
+    margin: 10px 0 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
 
 
 

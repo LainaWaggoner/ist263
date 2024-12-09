@@ -235,10 +235,10 @@ footer input[type="email"]:focus {
     border-color: #ed62af; /* Accent color */
 }
 
-/* Specific button styling for "subscribe" button */
+/* Styling for the "subscribe" button */
 footer button.subscribe {
     padding: 15px 30px;
-    background-color: #ed62af; /* Pink background */
+    background-color: #ff69b4; /* Hot pink background */
     color: black; /* Black text */
     border: none;
     border-radius: 8px;
@@ -248,8 +248,21 @@ footer button.subscribe {
 }
 
 footer button.subscribe:hover {
-    background-color: #d14e94; /* Slightly darker pink on hover */
+    background-color: #ff1493; /* Slightly darker hot pink on hover */
 }
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    footer form {
+        flex-direction: column;
+    }
+
+    footer input[type="email"], footer button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 
 /* Small screen adjustments */
 @media (max-width: 768px) {

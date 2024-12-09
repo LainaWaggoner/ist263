@@ -544,6 +544,42 @@ nav ul li:hover::after {
 .timeline-content p {
     margin: 5px 0 0;
 }
+<style>
+    .qa-pair {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .qa-pair:hover .answer {
+        opacity: 1;
+        transform: translateX(0);
+        background-color: black; /* Black background on hover */
+        color: white; /* White text for contrast */
+    }
+    .question, .answer {
+        max-width: 70%;
+        padding: 15px 20px;
+        border-radius: 20px;
+        margin: 10px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+    .question {
+        background-color: #FA97E9;
+        color: black;
+        align-self: flex-start;
+        border: 2px solid #D67EC6;
+    }
+    .answer {
+        background-color: #db5dc8; /* Default answer background */
+        color: black;
+        align-self: flex-end;
+        border: 2px solid #444;
+        opacity: 0; /* Initially hidden */
+        transform: translateX(20px); /* Animates into view */
+    }
+</style>
 
 
 

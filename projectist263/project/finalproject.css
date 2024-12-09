@@ -232,13 +232,13 @@ footer input[type="email"] {
 }
 
 footer input[type="email"]:focus {
-    border-color: #ff6600; /* Accent color */
+    border-color: #ed62af; /* Accent color */
 }
 
 footer button {
     padding: 15px 30px;
-    background-color: #ff6600; /* Accent color */
-    color: white;
+    background-color: #000000; /* Accent color */
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
     cursor: pointer;

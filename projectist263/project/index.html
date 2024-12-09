@@ -78,14 +78,38 @@
     <!-- Footer Section -->
     <footer>
         <h3>Subscribe</h3>
-        <p>Exclusive content & Weekly Updates</p>
+        <p>Exclusive content &amp; Weekly Updates</p>
         <form action="#" method="post">
-            <input type="email" placeholder="Enter your email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
-        <p>&copy; 2024 Laina Waggoner</p>
+        <p>© 2024 Laina Waggoner</p>
     </footer>
-</body>
-</html>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('subscribeForm');
+            const emailInput = document.getElementById('email');
+        
+            // Highlight input field on focus
+            emailInput.addEventListener('focus', function() {
+                emailInput.style.border = '2px solid #FA97E9';
+            });
+        
+            emailInput.addEventListener('blur', function() {
+                emailInput.style.border = '';
+            });
+        
+            // Form validation on submit
+            form.addEventListener('submit', function(event) {
+                const emailValue = emailInput.value;
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        
+                if (!emailPattern.test(emailValue)) {
+                    alert('Please enter a valid email address.');
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+        });
+        </script>
     
-

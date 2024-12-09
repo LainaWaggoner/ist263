@@ -5,25 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past & Future - Cuse Couture</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="finalproject.css"> 
+    <link rel="stylesheet" href="finalproject.css">
     <link rel="icon" type="image/png" href="faviconnew.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="finalproject.css"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../project/faviconnew.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="../project/faviconnew.ico">
     <style>
-        /* Inline CSS for side-by-side image layout */
+        /* Image Row Styles */
         .image-row {
             display: flex;
-            justify-content: center; /* Centers the images */
-            gap: 20px; /* Adds spacing between images */
-            margin: 40px 0; /* Adds margin above and below the image row */
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
         }
         .image-row img {
-            width: 30%; /* Each image takes up 30% of the row's width */
-            border-radius: 8px; /* Adds slight rounding to the corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .timeline-item.active-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #d67ec6;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background-color: #db5dc8;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            transition: background-color 0.3s ease;
+        }
+        .timeline-dot.active-dot {
+            background-color: #ffd700;
+        }
+        .timeline-content {
+            padding: 10px;
+            background-color: #fa97e9;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-content h3 {
+            margin-top: 0;
+            color: #444;
+        }
+        .timeline-content p {
+            margin: 5px 0 0;
         }
     </style>
 </head>
@@ -41,10 +92,7 @@
     <main>
         <section>
             <h2>Past & Future – How Accurate is Trend Forecasting?</h2>
-            <p>To understand and forecast trends we must understand the trend cycle. Fashion trends typically follow a cycle of about 20-30 years before they resurface in popular culture. Social media has also changed the trend cycle in many ways, allowing trends to emerge and spread more rapidly, often within days or weeks.</p>
-            <p>Unlike traditional fashion cycles that could take months to develop, trends can go viral overnight through platforms like TikTok, Instagram, and Twitter. AI has also changed the trend cycle by helping brands quickly spot and respond to what consumers want.</p>
-            <p>Predicting consumer behavior is difficult for anyone, but particularly for college students, who are often at the forefront of trendsetting. Their styles can change quickly, and their limited budgets affect their purchasing decisions.</p>
-            <p>Trend accuracy has varied over the years but trends like athleisure have been accurately predicted, showcasing how lifestyle changes can create demand for new types of clothing.</p>
+            <p>To understand and forecast trends we must understand the trend cycle...</p>
         </section>
 
         <!-- Images Row -->
@@ -53,108 +101,79 @@
             <img src="../images/syracusefits2.jpg" alt="Syracuse Fits 2">
             <img src="../images/syracusefits3.jpg" alt="Syracuse Fits 1">
         </div>
-    </main>
-    <main>
-        <!-- Existing content -->
+
+        <!-- Timeline Section -->
         <section>
             <h2>Fashion Trend Forecast for 2025</h2>
             <p>Explore the anticipated trends that will shape fashion in 2025.</p>
-    
-            <!-- Timeline container -->
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>January 2025</h3>
-                        <p>Minimalist clothing with sustainable materials becomes popular as eco-conscious consumers prioritize fashion with purpose.</p>
+                        <p>Minimalist clothing with sustainable materials becomes popular...</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>March 2025</h3>
-                        <p>Chunky boots paired with oversized denim jackets make a strong comeback, merging the 90s and 2000s influences.</p>
+                        <p>Chunky boots paired with oversized denim jackets...</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>June 2025</h3>
-                        <p>Bright neon and metallic fabrics take over summer collections, highlighting a bold, playful approach to fashion.</p>
+                        <p>Bright neon and metallic fabrics take over summer collections...</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>September 2025</h3>
-                        <p>Smart fashion with integrated wearable technology becomes mainstream, blending innovation with comfort.</p>
+                        <p>Smart fashion with integrated wearable technology...</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>December 2025</h3>
-                        <p>Luxury fashion houses introduce limited-edition collections that prioritize eco-friendly production methods.</p>
+                        <p>Luxury fashion houses introduce limited-edition collections...</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
+    <!-- Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const timelineItems = document.querySelectorAll('.timeline-item');
-            
             window.addEventListener('scroll', function() {
                 timelineItems.forEach(item => {
                     const rect = item.getBoundingClientRect();
                     if (rect.top < window.innerHeight && rect.bottom >= 0) {
                         item.querySelector('.timeline-dot').classList.add('active-dot');
-                        item.querySelector('.timeline-content').classList.add('active-content');
+                        item.classList.add('active-content');
                     } else {
                         item.querySelector('.timeline-dot').classList.remove('active-dot');
-                        item.querySelector('.timeline-content').classList.remove('active-content');
+                        item.classList.remove('active-content');
                     }
                 });
             });
         });
-    </script>    
+    </script>
+
     <footer>
         <h3>Subscribe</h3>
-        <p>Exclusive content &amp; Weekly Updates</p>
-        <form action="#" method="post">
+        <form>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
         <p>© 2024 Laina Waggoner</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('subscribeForm');
-            const emailInput = document.getElementById('email');
-        
-            // Highlight input field on focus
-            emailInput.addEventListener('focus', function() {
-                emailInput.style.border = '2px solid #FA97E9';
-            });
-        
-            emailInput.addEventListener('blur', function() {
-                emailInput.style.border = '';
-            });
-        
-            // Form validation on submit
-            form.addEventListener('submit', function(event) {
-                const emailValue = emailInput.value;
-                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        
-                if (!emailPattern.test(emailValue)) {
-                    alert('Please enter a valid email address.');
-                    event.preventDefault(); // Prevent form submission
-                }
-            });
-        });
-        </script>
-
-
+</body>
+</html>
 

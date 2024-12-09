@@ -625,6 +625,36 @@ nav ul li:hover::after {
         color: white; /* Makes the text white */
         text-align: center;
     }
+    .polaroid-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .star {
+        width: 20px; /* Adjust size as needed */
+        height: auto;
+    }
+    
+    .star.left {
+        margin-right: 10px;
+    }
+    
+    .star.right {
+        margin-left: 10px;
+    }
+    
+    .polaroid {
+        position: relative;
+        border: 2px solid #D67EC6; /* Border for the Polaroid */
+        border-radius: 10px; /* Optional rounded edges */
+        background-color: #fff; /* Polaroid background */
+        text-align: center;
+        padding: 10px; /* Space inside the Polaroid */
+    }
+    
     
     
 

@@ -54,6 +54,71 @@
             <img src="../images/syracusefits3.jpg" alt="Syracuse Fits 1">
         </div>
     </main>
+    <main>
+        <!-- Existing content -->
+        <section>
+            <h2>Fashion Trend Forecast for 2025</h2>
+            <p>Explore the anticipated trends that will shape fashion in 2025.</p>
+    
+            <!-- Timeline container -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>January 2025</h3>
+                        <p>Minimalist clothing with sustainable materials becomes popular as eco-conscious consumers prioritize fashion with purpose.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>March 2025</h3>
+                        <p>Chunky boots paired with oversized denim jackets make a strong comeback, merging the 90s and 2000s influences.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>June 2025</h3>
+                        <p>Bright neon and metallic fabrics take over summer collections, highlighting a bold, playful approach to fashion.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>September 2025</h3>
+                        <p>Smart fashion with integrated wearable technology becomes mainstream, blending innovation with comfort.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>December 2025</h3>
+                        <p>Luxury fashion houses introduce limited-edition collections that prioritize eco-friendly production methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            window.addEventListener('scroll', function() {
+                timelineItems.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        item.querySelector('.timeline-dot').classList.add('active-dot');
+                        item.querySelector('.timeline-content').classList.add('active-content');
+                    } else {
+                        item.querySelector('.timeline-dot').classList.remove('active-dot');
+                        item.querySelector('.timeline-content').classList.remove('active-content');
+                    }
+                });
+            });
+        });
+    </script>    
     <footer>
         <h3>Subscribe</h3>
         <p>Exclusive content &amp; Weekly Updates</p>
@@ -90,48 +155,6 @@
             });
         });
         </script>
-<section>
-    <h2>Fashion Trend Forecast for 2025</h2>
-    <p>Explore the anticipated trends that will shape fashion in 2025.</p>
 
-    <!-- Timeline container -->
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>January 2025</h3>
-                <p>Minimalist clothing with sustainable materials becomes popular as eco-conscious consumers prioritize fashion with purpose.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>March 2025</h3>
-                <p>Chunky boots paired with oversized denim jackets make a strong comeback, merging the 90s and 2000s influences.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>June 2025</h3>
-                <p>Bright neon and metallic fabrics take over summer collections, highlighting a bold, playful approach to fashion.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>September 2025</h3>
-                <p>Smart fashion with integrated wearable technology becomes mainstream, blending innovation with comfort.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>December 2025</h3>
-                <p>Luxury fashion houses introduce limited-edition collections that prioritize eco-friendly production methods.</p>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-    
+
+

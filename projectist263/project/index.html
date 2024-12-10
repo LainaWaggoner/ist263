@@ -12,11 +12,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../project/faviconnew.ico">
 </head>
 <body>
-    <!-- Loader Section -->
-<div id="loader">
-    <div class="catwalk">
-        <div class="model"></div>
-    </div>
 </div>
     <header>
         <div class="logo-container">
@@ -32,6 +27,7 @@
         </nav>                  
     </header>
     <main>
+        <main id="main-content" style="display: none;">
         <section class="author">
             <h2>About the Author</h2> <!-- New heading added -->
             <p class="author-text">The Author...</p> 
@@ -126,21 +122,6 @@
         alert('Thank you for subscribing to Cuse Couture!');
     });
 </script>
-<script>
-// Wait for the window to load
-window.addEventListener('load', function() {
-    const loader = document.getElementById('loader');
-    const mainContent = document.getElementById('main-content');
-
-    // Remove loader after a short delay
-    setTimeout(() => {
-        loader.style.display = 'none';
-        mainContent.style.display = 'block';
-        document.body.style.overflow = 'auto'; // Enable scrolling after loader
-    }, 6000); // Adjust this time if you want a longer or shorter load
-});
-</script>
-
 </body>
 </html>
 

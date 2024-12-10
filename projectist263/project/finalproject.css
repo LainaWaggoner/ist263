@@ -383,6 +383,19 @@ footer button.subscribe:hover {
     font-size: 16px;
     line-height: 1.6;
 }
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+}
+
+.photo-item img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 8px; /* Optional */
+}
+
 
 
 

@@ -35,57 +35,6 @@
             color: white;
             font-weight: bold;
         }
-
-        /* Polaroid and Carousel */
-        .polaroid-container {
-            display: flex;
-            justify-content: center;
-            perspective: 1000px; 
-            gap: 20px; 
-        }
-        .polaroid {
-            width: 150px;
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.5s;
-        }
-        .polaroid img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .polaroid p {
-            font-size: 14px;
-            margin-top: 10px;
-            color: #333;
-        }
-        .carousel {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            perspective: 1000px;
-        }
-        .polaroid {
-            position: absolute;
-            transition: transform 0.5s, z-index 0.5s;
-        }
-        .polaroid:hover {
-            transform: translateZ(150px) scale(1.1);
-            z-index: 2;
-        }
-        .polaroid:nth-child(1) {
-            transform: rotateY(0deg) translateZ(300px);
-        }
-        .polaroid:nth-child(2) {
-            transform: rotateY(120deg) translateZ(300px);
-        }
-        .polaroid:nth-child(3) {
-            transform: rotateY(240deg) translateZ(300px);
-        }
-
         /* Q&A Styles */
         .qa-section {
             max-width: 800px;
@@ -136,23 +85,6 @@
         <section class="qa-section">
             <h2>Interviews with Syracuse Students on Fashion and Individuality</h2>
             <h3>Interview with Avery Rush (Student Minoring in Fashion Design, Editor of UGirl Magazine)</h3>
-            
-            <!-- Polaroid Carousel -->
-            <div class="carousel">
-                <div class="polaroid">
-                    <img src="../images/averypic.jpg" alt="Avery Rush posed with her bestfriend Lauren">
-                    <p>Photo of Avery Rush and Lauren</p>
-                </div>
-                <div class="polaroid">
-                    <img src="../images/averyphoto.jpg" alt="Avery Rush Selfie">
-                    <p>Photo of Avery Rush</p>
-                </div>
-                <div class="polaroid">
-                    <img src="../photos/averystunning.jpg" alt="Avery Rush dressed as Lana Del Ray">
-                    <p>Avery as Lana Del Ray</p>
-                </div>
-            </div>
-
             <!-- Q&A Section -->
             <div class="qa-pair">
                 <div class="question">

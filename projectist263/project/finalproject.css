@@ -544,38 +544,7 @@ nav ul li:hover::after {
 .timeline-content p {
     margin: 5px 0 0;
 }
-/* General styles for Q&A section */
-.qa-pair {
-    margin-bottom: 20px; /* Space between Q&A pairs */
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease-in-out;
-}
 
-.qa-pair:hover {
-    background-color: #f1f1f1;
-    transform: translateY(-5px);
-}
-
-.question {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.answer {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.question strong, 
-.answer strong {
-    color: #007BFF; /* Highlight Q and A */
-}
 .qa-section {
     max-width: 800px;
     margin: 40px auto;

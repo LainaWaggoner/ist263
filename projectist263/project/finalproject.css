@@ -1115,6 +1115,16 @@ nav ul li a {
         align-items: flex-start;
     }
 }
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;  /* Stack images vertically */
+        align-items: center;
+    }
+    .polaroid {
+        transform: translateZ(0px); /* Remove 3D effect */
+        margin-bottom: 15px;  /* Space out images */
+    }
+}
 
 
 

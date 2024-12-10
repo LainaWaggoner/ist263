@@ -312,6 +312,78 @@ footer button.subscribe:hover {
         max-width: 100%;
     }
 }
+/* QA Section Styles */
+.qa-section {
+    padding: 50px 20px;
+    background-color: #ffffff; /* White background for contrast */
+    color: #000; /* Black text for readability */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.qa-section h2, 
+.qa-section h3 {
+    text-align: center;
+    color: #000; /* Black titles for contrast */
+    margin-bottom: 20px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 2px solid #000; /* Black border for sharp, clean look */
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    width: 100%;
+    background-color: #000; /* Black button background */
+    color: #fff; /* White text for contrast */
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-button:hover {
+    background-color: #444; /* Slightly lighter black on hover */
+}
+
+.accordion-button::after {
+    content: '\002B'; /* Plus symbol */
+    font-size: 24px;
+    color: #fff;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.active::after {
+    content: '\2212'; /* Minus symbol */
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff; /* White background for content */
+    color: #000; /* Black text for visibility */
+    padding: 0 20px;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content p {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 
 
 

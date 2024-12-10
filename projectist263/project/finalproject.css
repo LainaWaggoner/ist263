@@ -402,6 +402,35 @@ footer button.subscribe:hover {
     display: block; /* Ensures no white space below the image */
     border-radius: 8px; /* Optional: make it look a bit more modern */
 }
+/* Desktop Navigation */
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) { 
+    nav ul {
+        flex-direction: column; /* Makes the links stack vertically */
+        align-items: center; /* Centers the links */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between the vertical links */
+    }
+}
 
 
 

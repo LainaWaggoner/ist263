@@ -384,18 +384,24 @@ footer button.subscribe:hover {
     line-height: 1.6;
 }
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 10px; /* Space between images */
+    display: flex;
+    flex-wrap: wrap; /* This allows the images to "wrap" to the next row */
+    justify-content: center; /* This centers the images */
+    gap: 10px; /* Space between items (you can adjust this) */
+}
+
+.photo-item {
+    flex: 1 1 calc(25% - 20px); /* Adjusts for 4 items per row (desktop) */
+    max-width: calc(25% - 20px); /* Ensure it doesn't exceed this width */
+    box-sizing: border-box; /* Ensures padding is included in total width */
 }
 
 .photo-item img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    border-radius: 8px; /* Optional */
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no white space below the image */
+    border-radius: 8px; /* Optional: make it look a bit more modern */
 }
-
 
 
 

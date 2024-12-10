@@ -35,10 +35,10 @@
             <div class="photo-item">
                 <img src="../images/averypic.jpg" alt="Avery Rush and Lauren">
             </div>
-            <!-- Add more photos here -->
-        </div>
-    </section>
-
+            <div class="photo-item">
+                <img src="../photos/averyselfie.jpg" alt="Avery Rush at Formal">
+            </div>
+        </section>
     <main>
         <section class="qa-section">
             <h2>Interviews with Syracuse Students on Fashion and Individuality</h2>
@@ -94,6 +94,28 @@
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevents the page from reloading
             alert('Thank you for subscribing to Cuse Couture!');
+        });
+    </script>
+    <script>
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const currentlyActiveButton = document.querySelector('.accordion-button.active');
+                
+                if (currentlyActiveButton && currentlyActiveButton !== button) {
+                    currentlyActiveButton.classList.remove('active');
+                    currentlyActiveButton.nextElementSibling.style.maxHeight = 0;
+                }
+                
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                if (button.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
         });
     </script>
 </body>

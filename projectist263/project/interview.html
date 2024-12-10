@@ -80,8 +80,22 @@
             </ul>
         </nav>            
     </header>
-
-    <main>
+    <section id="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-container">
+          <div class="photo-item">
+            <img src="../images/averyphoto.jpg" alt="Picture of Avery Rush">
+          </div>
+          <div class="photo-item">
+            <img src="../photos/averystunning.jpg" alt="Avery Rush dressed as Lana Del Ray">
+          </div>
+          <div class="photo-item">
+            <img src="../images/averypic.jpg" alt="Avery Rush and Lauren">
+          </div>
+          <!-- Add more photos here -->
+        </div>
+      </section>
+       <main>
         <section class="qa-section">
             <h2>Interviews with Syracuse Students on Fashion and Individuality</h2>
             <h3>Interview with Avery Rush (Student Minoring in Fashion Design, Editor of UGirl Magazine)</h3>
@@ -127,19 +141,3 @@
     </footer>
 
     <script>
-        // Carousel Rotation Script
-        document.addEventListener('DOMContentLoaded', function() {
-            const polaroids = document.querySelectorAll('.polaroid');
-            let angle = 0;
-
-            setInterval(() => {
-                angle += 120;
-                polaroids.forEach((polaroid, index) => {
-                    const rotateAngle = angle + index * 120;
-                    polaroid.style.transform = `rotateY(${rotateAngle}deg) translateZ(300px)`;
-                });
-            }, 3000);
-        });
-    </script>
-</body>
-</html>
